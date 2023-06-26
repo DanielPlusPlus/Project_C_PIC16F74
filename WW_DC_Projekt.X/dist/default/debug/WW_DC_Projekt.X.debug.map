@@ -1,0 +1,308 @@
+Microchip MPLAB XC8 Compiler V2.41
+
+Linker command line:
+
+-W-3 --edf=E:\Programy\XC8\pic\dat\20230208172133_en.msgs -cn \
+  -h+dist/default/debug\WW_DC_Projekt.X.debug.sym \
+  --cmf=dist/default/debug\WW_DC_Projekt.X.debug.cmf -z -Q16F74 \
+  -oC:\Users\PC\AppData\Local\Temp\xcAs148.\driver_tmp_3.o \
+  --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
+  -Mdist/default/debug/WW_DC_Projekt.X.debug.map \
+  --md=C:\Users\PC\AppData\Local\Temp\xcAs148.\driver_tmp_0.dat -E1 \
+  -ver=XC8 Compiler --acfsm=1493 -ACODE=00h-07FFhx2 -ASTRCODE=00h-0FFFh \
+  -ASTRING=00h-0FFhx16 -ACONST=00h-0FFhx16 -AENTRY=00h-0FFhx16 \
+  -ABANK0=020h-07Dh -ABANK1=0A0h-0FDh -ARAM=020h-07Dh,0A0h-0FDh \
+  -AABS1=020h-07Fh,0A0h-0FFh -ACOMMON=07Eh-07Fh -ASFR0=00h-01Fh \
+  -ASFR1=080h-09Fh -ASFR2=0100h-017Dh -ASFR3=0180h-01FDh \
+  -ACONFIG=02007h-02007h -DCONFIG=2 -AIDLOC=02000h-02003h -DIDLOC=2 \
+  -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 \
+  -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
+  -pfunctab=ENTRY -k C:\Users\PC\AppData\Local\Temp\xcAs148.\driver_tmp_9.o \
+  dist/default/debug\WW_DC_Projekt.X.debug.o 
+
+Object code version is 3.11
+
+Machine type is 16F74
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+C:\Users\PC\AppData\Local\Temp\xcAs148.\driver_tmp_9.o
+                end_init                              D        D        2        8       0
+                reset_vec                             0        0        2        0       0
+                config                             2007     2007        1        0       4
+dist/default/debug\WW_DC_Projekt.X.debug.o
+                cinit                                 F        F        7        8       0
+                intentry                              4        4        9        8       0
+                config                             2007     2007        1        0       4
+                text5                               13D      13D       12        8       0
+                text4                                68       68       46        8       0
+                text3                                EA       EA       2A        8       0
+                text2                                AE       AE       3C        8       0
+                text1                               114      114       29        8       0
+                maintext                             16       16       52        8       0
+                cstackBANK0                          20       20       14       20       1
+                bssBANK0                             34       34        2       20       1
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   CODE           
+                end_init                              D        D        2         0
+                cinit                                 F        F        7         0
+                intentry                              4        4        9         0
+                reset_vec                             0        0        2         0
+                text5                               13D      13D       12         0
+                text4                                68       68       46         0
+                text3                                EA       EA       2A         0
+                text2                                AE       AE       3C         0
+                text1                               114      114       29         0
+                maintext                             16       16       52         0
+
+        CLASS   STRCODE        
+
+        CLASS   STRING         
+
+        CLASS   CONST          
+
+        CLASS   ENTRY          
+
+        CLASS   BANK0          
+                cstackBANK0                          20       20       14         1
+                bssBANK0                             34       34        2         1
+
+        CLASS   BANK1          
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               7E       7E        2         1
+
+        CLASS   COMMON         
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   SFR2           
+
+        CLASS   SFR3           
+
+        CLASS   CONFIG         
+                config                             2007     2007        1         4
+
+        CLASS   IDLOC          
+
+        CLASS   BANK3          
+
+        CLASS   BANK2          
+
+        CLASS   STACK          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000000  000002  000002         0       0  CODE        2
+                intentry                       000004  00014B  00014F         8       0  CODE        2
+                cstackBANK0                    000020  000016  000036        20       1  BANK0       1
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            0036-007D             48           1
+        BANK1            00A0-00FD             5E           1
+        CODE             0002-0003              2           2
+                         014F-0FFF            6B1
+        CONST            0002-0003              2           2
+                         014F-0FFF            100
+        ENTRY            0002-0003              2           2
+                         014F-0FFF            100
+        IDLOC            2000-2003              4           2
+        RAM              0036-007D             48           1
+                         00A0-00FD             5E
+        SFR0             0000-001F             20           1
+        SFR1             0080-009F             20           1
+        SFR2             0100-017D             7E           1
+        SFR3             0180-01FD             7E           1
+        STRCODE          0002-0003              2           2
+                         014F-0FFF            EB1
+        STRING           0002-0003              2           2
+                         014F-0FFF            100
+
+                                  Symbol Table
+
+?___lwdiv                         cstackBANK0  0022
+?___lwmod                         cstackBANK0  0022
+?_obliczDlugosc                   cstackBANK0  0029
+?_obliczPrzecinek                 cstackBANK0  0029
+_GIE                              (abs)        005F
+_PEIE                             (abs)        005E
+_PORTC                            (abs)        0007
+_PORTD                            (abs)        0008
+_PR2                              (abs)        0092
+_RB0                              (abs)        0030
+_T2CON                            (abs)        0012
+_T2CONbits                        (abs)        0012
+_TMR2                             (abs)        0011
+_TMR2IE                           (abs)        0461
+_TMR2IF                           (abs)        0061
+_TRISB                            (abs)        0086
+_TRISC                            (abs)        0087
+_TRISD                            (abs)        0088
+__H__absolute__                   __absolute__ 0000
+__Habs1                           abs1         0000
+__Hbank0                          bank0        0000
+__Hbank1                          bank1        0000
+__Hbank2                          bank2        0000
+__Hbank3                          bank3        0000
+__HbssBANK0                       bssBANK0     0000
+__Hcinit                          cinit        0016
+__Hclrtext                        clrtext      0000
+__Hcode                           code         0000
+__Hcommon                         common       0000
+__Hconfig                         config       2008
+__HcstackBANK0                    cstackBANK0  0000
+__HcstackCOMMON                   cstackCOMMON 0000
+__Heeprom_data                    eeprom_data  0000
+__Hend_init                       end_init     000F
+__Hfunctab                        functab      0000
+__Hinit                           init         000D
+__Hintentry                       intentry     000D
+__Hmaintext                       maintext     0000
+__Hpowerup                        powerup      0000
+__Hram                            ram          0000
+__Hreset_vec                      reset_vec    0002
+__Hsfr0                           sfr0         0000
+__Hsfr1                           sfr1         0000
+__Hsfr2                           sfr2         0000
+__Hsfr3                           sfr3         0000
+__Hspace_0                        (abs)        014F
+__Hspace_1                        (abs)        0036
+__Hspace_2                        (abs)        0000
+__Hspace_3                        (abs)        0000
+__Hspace_4                        (abs)        400F
+__Hstack                          stack        0000
+__Hstrings                        strings      0000
+__Htext                           text         0000
+__L__absolute__                   __absolute__ 0000
+__Labs1                           abs1         0000
+__Lbank0                          bank0        0000
+__Lbank1                          bank1        0000
+__Lbank2                          bank2        0000
+__Lbank3                          bank3        0000
+__LbssBANK0                       bssBANK0     0000
+__Lcinit                          cinit        000F
+__Lclrtext                        clrtext      0000
+__Lcode                           code         0000
+__Lcommon                         common       0000
+__Lconfig                         config       0000
+__LcstackBANK0                    cstackBANK0  0000
+__LcstackCOMMON                   cstackCOMMON 0000
+__Leeprom_data                    eeprom_data  0000
+__Lend_init                       end_init     000D
+__Lfunctab                        functab      0000
+__Linit                           init         000D
+__Lintentry                       intentry     0004
+__Lmaintext                       maintext     0000
+__Lpowerup                        powerup      0000
+__Lram                            ram          0000
+__Lreset_vec                      reset_vec    0000
+__Lsfr0                           sfr0         0000
+__Lsfr1                           sfr1         0000
+__Lsfr2                           sfr2         0000
+__Lsfr3                           sfr3         0000
+__Lspace_0                        (abs)        0000
+__Lspace_1                        (abs)        0000
+__Lspace_2                        (abs)        0000
+__Lspace_3                        (abs)        0000
+__Lspace_4                        (abs)        0000
+__Lstack                          stack        0000
+__Lstrings                        strings      0000
+__Ltext                           text         0000
+__S0                              (abs)        014F
+__S1                              (abs)        0036
+___int_sp                         stack        0000
+___latbits                        (abs)        0001
+___lwdiv                          text4        0068
+___lwdiv@counter                  cstackBANK0  0028
+___lwdiv@dividend                 cstackBANK0  0024
+___lwdiv@divisor                  cstackBANK0  0022
+___lwdiv@quotient                 cstackBANK0  0026
+___lwmod                          text2        00AE
+___lwmod@counter                  cstackBANK0  0026
+___lwmod@dividend                 cstackBANK0  0024
+___lwmod@divisor                  cstackBANK0  0022
+___sp                             stack        0000
+___stackhi                        (abs)        0000
+___stacklo                        (abs)        0000
+__end_of___lwdiv                  text4        00AE
+__end_of___lwmod                  text2        00EA
+__end_of__initialization          cinit        0013
+__end_of_main                     maintext     0068
+__end_of_obliczDlugosc            text3        0114
+__end_of_obliczPrzecinek          text1        013D
+__end_of_proceduraObslugiPrzerwan text5        014F
+__initialization                  cinit        000F
+__pbssBANK0                       bssBANK0     0034
+__pcstackBANK0                    cstackBANK0  0020
+__pcstackCOMMON                   cstackCOMMON 0000
+__pintentry                       intentry     0004
+__pmaintext                       maintext     0016
+__ptext1                          text1        0114
+__ptext2                          text2        00AE
+__ptext3                          text3        00EA
+__ptext4                          text4        0068
+__ptext5                          text5        013D
+_iloscPrzepelnien                 bssBANK0     0034
+_main                             maintext     0016
+_obliczDlugosc                    text3        00EA
+_obliczPrzecinek                  text1        0114
+_proceduraObslugiPrzerwan         text5        013D
+btemp                             (abs)        007E
+end_of_initialization             cinit        0013
+interrupt_function                intentry     0004
+intlevel0                         functab      0000
+intlevel1                         functab      0000
+intlevel2                         functab      0000
+intlevel3                         functab      0000
+intlevel4                         functab      0000
+intlevel5                         functab      0000
+main@dlugosc                      cstackBANK0  0032
+main@przecinek                    cstackBANK0  0030
+obliczDlugosc@dlugosc             cstackBANK0  002B
+obliczPrzecinek@przecinek         cstackBANK0  002B
+reset_vec                         reset_vec    0000
+saved_w                           (abs)        007E
+start                             init         000D
+start_initialization              cinit        000F
+wtemp0                            (abs)        007E
+
+
+MODULE INFORMATION
+
+Module		Function		Class		Link	Load	Size
+E:\Programy\XC8\pic\sources\c90\common\lwmod.c
+		___lwmod       		CODE           	00AE	0000	60
+
+E:\Programy\XC8\pic\sources\c90\common\lwmod.c estimated size: 60
+
+shared
+		__initialization		CODE           	000F	0000	4
+
+shared estimated size: 4
+
+E:\Programy\XC8\pic\sources\c90\common\lwdiv.c
+		___lwdiv       		CODE           	0068	0000	70
+
+E:\Programy\XC8\pic\sources\c90\common\lwdiv.c estimated size: 70
+
+WW_DC_Projekt.c
+		_main          		CODE           	0016	0000	82
+		_obliczPrzecinek		CODE           	0114	0000	41
+		_proceduraObslugiPrzerwan		CODE           	013D	0000	18
+		_obliczDlugosc 		CODE           	00EA	0000	42
+
+WW_DC_Projekt.c estimated size: 183
+
